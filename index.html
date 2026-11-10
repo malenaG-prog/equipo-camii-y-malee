@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Mural del Equipo — Portfolio</title>
+<meta name="description" content="Mural con las charlas, visitas y proyectos de un equipo de estudiantes de Informática." />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;600;700;800&family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<header class="topbar">
+  <div class="contenedor topbar-inner">
+    <a href="#inicio" class="marca" id="equipo-nombre-marca">Equipo</a>
+    <button id="nav-toggle" class="nav-toggle" aria-label="Abrir menú" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <nav>
+      <ul id="nav-links" class="nav-links">
+        <li><a href="#equipo">Equipo</a></li>
+        <li><a href="#habilidades">Habilidades</a></li>
+        <li><a href="#galeria">Recorrido</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+  <section id="inicio" class="hero">
+    <div class="contenedor hero-inner">
+      <p class="hero-eyebrow">📌 Cartelera del curso · E.p.s Informática</p>
+      <h1 class="hero-titulo"><span id="equipo-nombre">Equipo</span></h1>
+      <p class="hero-escuela" id="equipo-escuela"></p>
+      <p class="hero-texto">Todo lo que fuimos a prendieno en 4 años : charlas, visitas,salidas y proyectos.</p>
+      <a href="#galeria" class="btn btn-primario">Mirar el mural</a>
+    </div>
+  </section>
+
+  <section id="equipo" class="seccion">
+    <div class="contenedor">
+      <p class="seccion-eyebrow">Quiénes somos</p>
+      <h2 class="seccion-titulo">el equipo</h2>
+      <p class="equipo-resenia" id="equipo-resenia"></p>
+      <div class="miembros-wrap" id="miembros-wrap"></div>
+    </div>
+  </section>
+
+  <section id="habilidades" class="seccion seccion-alt">
+    <div class="contenedor">
+      <p class="seccion-eyebrow">Lo que fuimos aprendiendo</p>
+      <h2 class="seccion-titulo">Habilidades</h2>
+      <div id="habilidades-wrap"></div>
+    </div>
+  </section>
+
+  <section id="galeria" class="seccion">
+    <div class="contenedor">
+      <p class="seccion-eyebrow">Charlas, visitas y proyectos</p>
+      <h2 class="seccion-titulo">Nuestro recorrido</h2>
+
+      <div class="filtros">
+        <div class="filtros-persona" role="group" aria-label="Filtrar por integrante">
+          <button class="filtro-btn activo" data-filtro-persona="todos">Todos</button>
+          <button class="filtro-btn" data-filtro-persona="persona1">CAMILA ERASO</button>
+          <button class="filtro-btn" data-filtro-persona="persona2">MALENA GURRERO</button>
+          <button class="filtro-btn" data-filtro-persona="ambos">Los dos</button>
+        </div>
+        <select id="filtro-categoria" class="filtro-select" aria-label="Filtrar por categoría">
+          <option value="todas">Todas las categorías</option>
+        </select>
+      </div>
+
+      <div class="galeria-grid" id="galeria-grid"></div>
+      <p id="galeria-vacio" class="galeria-vacio" hidden>No hay resultados para este filtro todavía.</p>
+    </div>
+  </section>
+
+  <section id="contacto" class="seccion seccion-alt">
+    <div class="contenedor">
+      <p class="seccion-eyebrow">Hablemos</p>
+      <h2 class="seccion-titulo">Contacto</h2>
+      <div class="contacto-wrap" id="contacto-wrap"></div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <div class="contenedor">
+    <p>Hecho por <span id="equipo-nombre-footer">el equipo</span> · Portfolio escolar de Informática</p>
+  </div>
+</footer>
+
+<div id="lightbox" class="lightbox" aria-hidden="true">
+  <button id="lightbox-cerrar" class="lightbox-cerrar" aria-label="Cerrar imagen">&times;</button>
+  <figure class="lightbox-figura">
+    <img id="lightbox-img" src="" alt="" />
+    <figcaption id="lightbox-caption"></figcaption>
+  </figure>
+</div>
+
+<script src="js/data.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
