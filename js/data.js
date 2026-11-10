@@ -25,7 +25,7 @@ const miembros = [
     nombre: "CAMILA ERASO",
     rol: "Desarrollo & Lógica",
     bio: "  ME GUSTA LA INFORMÁTICA PORQUE PERMITE CREAR,RESOLVER PROBLEMAS APRENDER COSAS NUEVAS USANDO LA TECNOLOGIÁ.EN EL FUTURO ME GUSTARIA ESPECIALIZARME EN PROGRAMACION Y DISEÑO DE PAGINAS WEB.EN LA ESCUELA APRENDI A USAR DISTINTOS PROGRAMAS,BUSCAR INFORMACION DE MANERA RESPONSABLE  Y TRABAJAR EN EQUIPO.",
-    foto: "",
+    foto: "assets/img/cami.jpg",
     iniciales: "NA",
     habilidades: [
       { nombre: "Naturales", nivel: 5 },
@@ -45,7 +45,7 @@ const miembros = [
     id: "persona2",
     nombre: "MALENA GUERRERO",
     rol: "diseño y documentacion",
-    foto: "",
+    foto: "assets/img/male.jpg",
     bio: "ME GUSTA ESTUDIAR INFORMATICA PORQUE PUEDO APRENDER A USAR LA TECNOLOGIA Y CREAR COSAS NUEVAS, ME GUSTARIA ESPECIALIZARME EN EL AREA DE DISEÑO GRAFICO Y TAMBIEN REALIZAR PAGINAS WEB. EN LA ESCUELA ME ESEÑARON A USAR ROGRAMAS Y ORGANIZAR INFORMACIÓN.",
     iniciales: "NA",
     habilidades: [
@@ -98,17 +98,16 @@ const items = [
     fecha: "2005-08",
     descripcion:
       "en esta salida tuvimos la oprtunidad que junto a otros compaeros aprendimos cosa basicas de lo que seria nadar en una pileta pprofecional",
-    imagen: "assts/img/natatorio.png",
+    imagen: "assets/img/natatorio.png",
   },
   {
     id: 4,
-    titulo: "Visita a data center regional",
+    titulo: "Pozo de Banfield",
     tipo: "visita",
     categoria: "Infraestructura",
     participantes: ["persona2"],
     fecha: "2024-09-11",
-    descripcion:
-      "Conocimos cómo funciona un centro de datos: refrigeración, seguridad física, redundancia y el trabajo de los equipos de infraestructura.",
+    descripcion:"",
     imagen: "assets/img/pozo de banfiel.png",
   },
   {
@@ -121,38 +120,5 @@ const items = [
     descripcion:
       "Diseño y maquetado con HTML, CSS y JavaScript de un sitio institucional para un comercio local, incluyendo catálogo y formulario de contacto.",
     imagen: "assets/img/tecnica N3.png",
-  },
-  {
-    id: 6,
-    titulo: "Charla: Ciberseguridad para principiantes",
-    tipo: "charla",
-    categoria: "Seguridad",
-    participantes: ["persona1", "persona2"],
-    fecha: "2024-10-29",
-    descripcion:
-      "Un especialista en seguridad informática nos contó sobre buenas prácticas, contraseñas seguras, phishing y cómo cuidar la identidad digital.",
-    imagen: "",
-  },
-  {
-    id: 7,
-    titulo: "Proyecto: Automatización de planillas con Visual Basic",
-    tipo: "proyecto",
-    categoria: "Automatización",
-    participantes: ["persona1"],
-    fecha: "2025-03-18",
-    descripcion:
-      "Macro en Visual Basic para Excel que automatiza la carga de notas y genera boletines individuales en segundos.",
-    imagen: "",
-  },
-  {
-    id: 8,
-    titulo: "Visita a incubadora de startups",
-    tipo: "visita",
-    categoria: "Emprendimiento",
-    participantes: ["persona1", "persona2"],
-    fecha: "2025-04-25",
-    descripcion:
-      "Conocimos distintos proyectos en etapa temprana y hablamos con sus fundadores sobre cómo pasar de una idea a un producto real.",
-    imagen: "",
   },
 ];
